@@ -7,7 +7,7 @@ One video was "leaked" to leccap (the first lecture), and from the url I got for
 
 The rest of the url is just a timestamp (corresponding to the start time of the lecture, but may be off by ~10 seconds) and a random 3-digit code, so my script just generates all possible URLs and sends HEAD requests until it hits something.
 
-Feel free to send a pull request to edit the script to make it more generalizable. Right now a lot of things are hard-coded in guesser.py. 
+Feel free to send a pull request to edit the script to make it more generalizable. Right now a lot of things are hard-coded in guesser.py. I also realize using the ThreadPoolExecutor may not be the most efficient idea, but I have not experimented with this.
 
 To run the script, download this repo, create a python virtual environment, and change the constants in guesser.py (for now), run the script, and wait :)
 
