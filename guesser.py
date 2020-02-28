@@ -59,8 +59,8 @@ def guess(center_time):
         executor.map(check_head, urls)
 
 def guess_all():
-    weeks_of_lecture = 7
-    for week in range(weeks_of_lecture):
+    weeks_of_lecture = 8
+    for week in range(weeks_of_lecture - 2, weeks_of_lecture):
         wednesday_time = g_orig_time + ((week + 1) * g_seconds_in_week)
         monday_time = wednesday_time - g_seconds_in_two_days
         guess(monday_time)
